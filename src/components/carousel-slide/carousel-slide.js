@@ -2,7 +2,7 @@ import { React } from 'react';
 import ProductDetails from '../product-details/product-details';
 import './carousel-slide.css'
 
-function CarosuelSlide(props) {
+function CarouselSlide(props) {
     return (
         <div className={props.isActive ? "carousel-slide active-product" : "carousel-slide"}>
             <img src={`./product-images/${props.product.imageName}`}
@@ -13,4 +13,4 @@ function CarosuelSlide(props) {
         </div>
     )
 }
-export default CarosuelSlide;
+export default CarouselSlide;

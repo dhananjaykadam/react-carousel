@@ -1,6 +1,6 @@
 import { React, useState } from 'react';
-import { useProducts } from '../../hooks/product-category-hook';
-import CarosuelSlide from '../carousel-slide/carousel-slide';
+import { useProducts } from '../../hooks/products-by-category';
+import CarouselSlide from '../carousel-slide/carousel-slide';
 import CategorySelector from '../category-selector/category-selector';
 import './carousel.css';
 function Carousel() {
@@ -34,7 +34,7 @@ function Carousel() {
             <div className="carousel-slides">
                 <button className="button-left" onClick={preProduct}> {'‹'} </button>
                 {productList.map((product, index) => (
-                    <CarosuelSlide key={index} product={product} isActive={product.name === productList[1].name}></CarosuelSlide>
+                    <CarouselSlide key={index} product={product} isActive={product.name === productList[1].name}></CarouselSlide>
                 ))}
                 <button className="button-right" onClick={nextProduct}>{'›'}</button>
             </div>
