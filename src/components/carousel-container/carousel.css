@@ -20,6 +20,8 @@
     width: 5rem;
     height: 5rem;
     top: 43%;
+    cursor: pointer;
+    z-index: 10;
 }
 .button-right {
     appearance: none;
@@ -33,6 +35,8 @@
     top: 30%;
     top: 43%;
     left: 93%;
+    cursor: pointer;
+    z-index: 10;
 }
 .button-right:focus {
     outline: none;

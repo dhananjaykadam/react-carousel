@@ -1,6 +1,7 @@
 .carousel-slide {
     display: inline;
     padding-right: 1%;
+    position: relative;
 }
 .product-image {
     width: 100%;
@@ -8,4 +9,10 @@
 }
 .active-product {
     transform: scale(1.1);
+}
+.product-name {
+
+}
+.product-price {
+    
 }
