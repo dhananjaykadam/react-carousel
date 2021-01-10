@@ -1,5 +1,5 @@
 .category-select {
-    margin-left: 2px;
+    margin-left: 10px;
     width: 16%;
     height: 37px;
     border-radius: 10px;
@@ -7,5 +7,8 @@
 }
 .category-select-label {
     font-size: large;
-    font-weight: 400;
+    font-weight: 500;
+}
+.category-selector {
+    margin-left: 3.1%;
 }
