@@ -4,10 +4,11 @@ import './carousel-slide.css'
 
 function CarosuelSlide(props) {
     return (
-        <div className="carousel-slide">
-            <img src="./product-images/product-1.jpg"
-                className={props.isActive ? "active-product product-image" : "product-image"}
-                alt="Product 1" />
+        <div className={props.isActive ? "carousel-slide active-product" : "carousel-slide"}>
+            <img src={`./product-images/${props.product.imageName}`}
+                key={props.product.imageName}
+                className={props.isActive ? "product-image active-image" : "product-image"}
+                alt={props.product.imageName} />
             <ProductDetails product={props.product}></ProductDetails>
         </div>
     )

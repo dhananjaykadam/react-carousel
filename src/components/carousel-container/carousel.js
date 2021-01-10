@@ -1,17 +1,17 @@
-import { React, useEffect, useState } from 'react';
-import { fetchProducts } from '../../services/product-service';
+import { React, useState } from 'react';
+import { useProducts } from '../../hooks/product-category-hook';
 import CarosuelSlide from '../carousel-slide/carousel-slide';
 import CategorySelector from '../category-selector/category-selector';
 import './carousel.css';
 function Carousel() {
-    const [products, setProducts] = useState([]);
     const [selectedIndex, setSelectedIndex] = useState(0);
+    const [selectedCategory, setSelectedCategory] = useState('ALL');
+    const products = useProducts(selectedCategory);
 
-    useEffect(() => {
-        const products = fetchProducts();
-        setProducts(products);
-    }, []);
-
+    const handleSelectedCategory = (event) => {
+        setSelectedIndex(0);
+        setSelectedCategory(event.target.value);
+    }
     const nextProduct = () => {
         if (selectedIndex < products.length - 3)
             setSelectedIndex(selectedIndex + 1);
@@ -26,12 +26,15 @@ function Carousel() {
     return (
         <div className="carousel-container">
             <div>
-                <CategorySelector></CategorySelector>
+                <CategorySelector
+                    selectedCategory={selectedCategory}
+                    onChange={handleSelectedCategory}>
+                </CategorySelector>
             </div>
             <div className="carousel-slides">
                 <button className="button-left" onClick={preProduct}> {'‹'} </button>
-                {productList.map(product => (
-                    <CarosuelSlide key={product.Name} product={product} isActive={product.name === productList[1].name}></CarosuelSlide>
+                {productList.map((product, index) => (
+                    <CarosuelSlide key={index} product={product} isActive={product.name === productList[1].name}></CarosuelSlide>
                 ))}
                 <button className="button-right" onClick={nextProduct}>{'›'}</button>
             </div>

@@ -4,15 +4,28 @@
     position: relative;
 }
 .product-image {
-    width: 100%;
+    width: 30vw;
+    height: 45vh;
     border-radius: 23px;
+    border: 2px solid gray;
 }
-.active-product {
-    transform: scale(1.1);
-}
-.product-name {
 
-}
-.product-price {
+@keyframes highlightProduct {
+    0% {
+      transform: scale(1);
+    }
     
+    100% {
+      transform: scale(1.1);
+    }
+  }
+
+.active-product {
+    z-index: 5;
+}
+
+.active-image {
+    border: 4px solid burlywood;
+    transform: scale(1.1);
+    animation: highlightProduct 1s ease-out;
 }

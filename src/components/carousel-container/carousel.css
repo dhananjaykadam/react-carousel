@@ -1,10 +1,12 @@
 .carousel-container {
     display: block;
     position: absolute;
+    width: 100%;
     top: 10%;
 }
 .carousel-slides {
     display: flex;
+    margin-left: 3%;
 }
 .category-selector {
     display: block;
@@ -34,7 +36,7 @@
     height: 5rem;
     top: 30%;
     top: 43%;
-    left: 93%;
+    left: 92%;
     cursor: pointer;
     z-index: 10;
 }
