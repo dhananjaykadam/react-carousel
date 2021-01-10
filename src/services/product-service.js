@@ -1,5 +1,4 @@
 export function fetchProducts(){
-    console.log("Returning products");
     return [
         {
             name: "Furniture Product 1",
