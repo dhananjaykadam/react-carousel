@@ -1,6 +1,8 @@
 # Sample react carousel
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##Screenshot
+
+<img src="./public/app-screenshot/sample-carousel.png" width="100%" />
 
 ## Available Scripts
 
