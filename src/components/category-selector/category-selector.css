@@ -1,0 +1,11 @@
+.category-select {
+    margin-left: 2px;
+    width: 16%;
+    height: 37px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.category-select-label {
+    font-size: large;
+    font-weight: 400;
+}

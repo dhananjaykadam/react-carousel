@@ -1,0 +1,42 @@
+.carousel-container {
+    display: block;
+    position: absolute;
+    top: 10%;
+}
+.carousel-slides {
+    display: flex;
+}
+.category-selector {
+    display: block;
+    margin-bottom: 1%;
+}
+.button-left {
+    appearance: none;
+    background: transparent;
+    border: none;
+    color: white;
+    position: absolute;
+    font-size: 5rem;
+    width: 5rem;
+    height: 5rem;
+    top: 43%;
+}
+.button-right {
+    appearance: none;
+    background: transparent;
+    border: none;
+    color: white;
+    position: absolute;
+    font-size: 5rem;
+    width: 5rem;
+    height: 5rem;
+    top: 30%;
+    top: 43%;
+    left: 93%;
+}
+.button-right:focus {
+    outline: none;
+}
+.button-left:focus {
+    outline: none;
+}

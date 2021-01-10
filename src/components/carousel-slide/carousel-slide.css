@@ -1,0 +1,11 @@
+.carousel-slide {
+    display: inline;
+    padding-right: 1%;
+}
+.product-image {
+    width: 100%;
+    border-radius: 23px;
+}
+.active-product {
+    transform: scale(1.1);
+}
