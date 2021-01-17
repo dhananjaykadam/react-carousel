@@ -70,3 +70,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+`git filter-branch -f --env-filter "GIT_AUTHOR_NAME='Dhananjay Kadam'; GIT_AUTHOR_EMAIL='jaykadam90@gmail.com'; GIT_COMMITTER_NAME='Dhananjay Kadam'; GIT_COMMITTER_EMAIL='jaykadam90@gmail.com';" HEAD`
